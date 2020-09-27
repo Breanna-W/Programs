@@ -23,6 +23,7 @@ package edu.nmsu.cs.webserver;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -60,8 +61,30 @@ public class WebWorker implements Runnable
 			InputStream is = socket.getInputStream();
 			OutputStream os = socket.getOutputStream();
 			readHTTPRequest(is);
-			writeHTTPHeader(os, "text/html");
-			writeContent(os);
+			String content = file.getName().substring(file.getName().lastIndexOf("."), file.getName().length());
+			if(content.equals(".jpeg"))
+			{
+				content = "image/jpeg";
+			}
+			else if(content.equals(".gif"))
+			{
+				content = "image/gif";
+			}
+			else if(content.equals(".png"))
+			{
+				content = "image/png";
+			}
+			else if(content.equals(".ico"))
+			{
+				content = "image/png";
+			}
+			else
+			{
+				content = "text/html";
+			}
+			System.out.println("Content = " + content);
+			writeHTTPHeader(os, content);
+			writeContent(os, content);
 			os.flush();
 			socket.close();
 		}
@@ -94,7 +117,6 @@ public class WebWorker implements Runnable
 				{
 					String[] parts = line.split(" ");
 					String path = "." + parts[1];
-					System.out.println(path);
 					if(path.equals("./"))
 					{
 						System.out.println("Success!");
@@ -154,13 +176,24 @@ public class WebWorker implements Runnable
 	 * @param os
 	 *          is the OutputStream object to write to
 	 **/
-	private void writeContent(OutputStream os) throws Exception
+	private void writeContent(OutputStream os, String content) throws Exception
 	{
 		if(!file.exists() || !file.isFile())
 		{
 			os.write("<html><head></head>".getBytes());
 			os.write("<body><h1><center>404 Error Page Not Found</center></h1></body></html>".getBytes());
 			return;
+		}
+		else if(content.equals("image/jpeg") || content.equals("image/gif") || content.equals("image/png"))
+		{
+			FileInputStream i = new FileInputStream(file);
+			int cur = i.read();
+			while(cur != -1)
+			{
+				os.write(cur);
+				cur = i.read();
+			}
+			i.close();
 		}
 		else
 		{

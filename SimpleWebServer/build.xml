@@ -1,4 +1,4 @@
-<project name="SimpleWebServer" default="compileClean" basedir=".">
+<project name="SimpleWebServer" default="run" basedir=".">
 <description>
 	Buildfile to compile and run SimpleWebServer program
 </description>
@@ -20,7 +20,7 @@
 <target name="compileClean" depends="clean, compile"/>
 
 <!-- Starts running the webserver -->
-<target name="run">
-	<java classname="edu.nmsu.cs.webserver.WebServer" classpath="${bin}"/>
+<target name="run" depends="compileClean">
+	<java classname="edu.nmsu.cs.webserver.WebServer" classpath="${bin}" dir="../www" fork="true"/>
 </target>
 </project>
