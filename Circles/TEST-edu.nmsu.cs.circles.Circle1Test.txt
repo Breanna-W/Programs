@@ -74,16 +74,16 @@ Test finished.
 ------------- ---------------- ---------------
 
 Testcase: scaleLess took 0.006 sec
-Testcase: scaleMore took 0.001 sec
+Testcase: scaleMore took 0 sec
 Testcase: simpleMoveX took 0 sec
 Testcase: simpleMoveY took 0 sec
-Testcase: simpleMove took 0 sec
+Testcase: simpleMove took 0.001 sec
 Testcase: simpleMovePosAndNeg took 0 sec
 Testcase: simpleMoveNeg took 0 sec
-Testcase: simpleMoveNegAndPos took 0.001 sec
+Testcase: simpleMoveNegAndPos took 0 sec
 Testcase: intersectInfinitePoints took 0 sec
 Testcase: intersectOnePoint took 0 sec
-Testcase: intersectZeroSeparate took 0 sec
+Testcase: intersectZeroSeparate took 0.001 sec
 Testcase: intersectTwoPoints took 0 sec
-Testcase: scaleEqual took 0.001 sec
+Testcase: scaleEqual took 0 sec
 Testcase: intersectZeroInside took 0 sec

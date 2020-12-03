@@ -21,7 +21,7 @@ public class Circle2 extends Circle
         {
             return false;
         }
-		if (d < radius)
+		if (d <= radius + other.radius)
 			return true;
 		else
 			return false;
