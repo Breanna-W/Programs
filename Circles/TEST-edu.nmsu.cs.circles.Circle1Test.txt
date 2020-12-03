@@ -1,5 +1,5 @@
 Testsuite: edu.nmsu.cs.circles.Circle1Test
-Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 14, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 ------------- Standard Output ---------------
 
 Test starting...
@@ -73,7 +73,7 @@ Running test intersectZeroInside.
 Test finished.
 ------------- ---------------- ---------------
 
-Testcase: scaleLess took 0.008 sec
+Testcase: scaleLess took 0.007 sec
 	FAILED
 null
 junit.framework.AssertionFailedError
@@ -98,55 +98,11 @@ junit.framework.AssertionFailedError
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 
 Testcase: simpleMoveX took 0 sec
-	FAILED
-null
-junit.framework.AssertionFailedError
-	at edu.nmsu.cs.circles.Circle1Test.simpleMoveX(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
-Testcase: simpleMoveY took 0.001 sec
-	FAILED
-null
-junit.framework.AssertionFailedError
-	at edu.nmsu.cs.circles.Circle1Test.simpleMoveY(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
+Testcase: simpleMoveY took 0 sec
 Testcase: simpleMove took 0 sec
 Testcase: simpleMovePosAndNeg took 0 sec
-	FAILED
-null
-junit.framework.AssertionFailedError
-	at edu.nmsu.cs.circles.Circle1Test.simpleMovePosAndNeg(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
-Testcase: simpleMoveNeg took 0 sec
+Testcase: simpleMoveNeg took 0.001 sec
 Testcase: simpleMoveNegAndPos took 0 sec
-	FAILED
-null
-junit.framework.AssertionFailedError
-	at edu.nmsu.cs.circles.Circle1Test.simpleMoveNegAndPos(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
 Testcase: intersectInfinitePoints took 0 sec
 Testcase: intersectOnePoint took 0 sec
 	FAILED
@@ -160,7 +116,7 @@ junit.framework.AssertionFailedError
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 
-Testcase: intersectZeroSeparate took 0.001 sec
+Testcase: intersectZeroSeparate took 0 sec
 Testcase: intersectTwoPoints took 0 sec
 Testcase: scaleEqual took 0 sec
 	FAILED
@@ -174,7 +130,7 @@ junit.framework.AssertionFailedError
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 
-Testcase: intersectZeroInside took 0.001 sec
+Testcase: intersectZeroInside took 0 sec
 	FAILED
 null
 junit.framework.AssertionFailedError
