@@ -1,0 +1,85 @@
+Testsuite: edu.nmsu.cs.circles.Circle1Test
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+------------- Standard Output ---------------
+
+Test starting...
+Running test simpleMoveX.
+
+Test finished.
+
+Test starting...
+Running test simpleMoveY.
+
+Test finished.
+
+Test starting...
+Running test simpleMove.
+
+Test finished.
+
+Test starting...
+Running test simpleMovePosAndNeg.
+
+Test finished.
+
+Test starting...
+Running test simpleMoveNeg.
+
+Test finished.
+
+Test starting...
+Running test simpleMoveNegAndPos.
+
+Test finished.
+------------- ---------------- ---------------
+
+Testcase: simpleMoveX took 0.007 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.nmsu.cs.circles.Circle1Test.simpleMoveX(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: simpleMoveY took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.nmsu.cs.circles.Circle1Test.simpleMoveY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: simpleMove took 0 sec
+Testcase: simpleMovePosAndNeg took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.nmsu.cs.circles.Circle1Test.simpleMovePosAndNeg(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: simpleMoveNeg took 0 sec
+Testcase: simpleMoveNegAndPos took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.nmsu.cs.circles.Circle1Test.simpleMoveNegAndPos(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+

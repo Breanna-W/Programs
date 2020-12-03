@@ -59,6 +59,55 @@ public class Circle1Test
 		Assert.assertTrue(p.x == 0 && p.y == 1);
 	}
 
+	//
+	//Test a negative x movement and a positive y movement
+	//
+	@Test
+	public void simpleMoveNegAndPos()
+	{
+		Point p;
+		System.out.println("Running test simpleMoveNegAndPos.");
+		p = circle1.moveBy(-1, 1);
+		Assert.assertTrue(p.x == 0 && p.y == 3);
+	}
+
+	//
+	//Test a positive x movement and a negative y movement
+	//
+	@Test
+	public void simpleMovePosAndNeg()
+	{
+		Point p;
+		System.out.println("Running test simpleMovePosAndNeg.");
+		p = circle1.moveBy(1, -1);
+		Assert.assertTrue(p.x == 2 && p.y == 1);
+	}
+
+	//
+	//Test a x movement with no y movement
+	//
+	@Test
+	public void simpleMoveX()
+	{
+		Point p;
+		System.out.println("Running test simpleMoveX.");
+		p = circle1.moveBy(1, 0);
+		Assert.assertTrue(p.x == 2 && p.y == 2);
+	}
+
+	//
+	//Test a y movement with no x movement
+	//
+	@Test
+	public void simpleMoveY()
+	{
+		Point p;
+		System.out.println("Running test simpleMoveY.");
+		p = circle1.moveBy(0, 1);
+		Assert.assertTrue(p.x == 1 && p.y == 3);
+	}
+
+	
 	/***
 	 * NOT USED public static void main(String args[]) { try { org.junit.runner.JUnitCore.runClasses(
 	 * java.lang.Class.forName("Circle1Test")); } catch (Exception e) { System.out.println("Exception:
